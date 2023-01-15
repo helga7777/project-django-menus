@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<h1>{{ id_subcat }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        {% load static %}
+        <img src='{% static "images/img_1.png" %}' alt="My image">
+    </div>
+    <div class="col-md-4">
+        <h5>Ингридиенты:</h5>
+        <p>{{ id_subcat }}</p>
+        <br>
+        <h5>Способ приготовления:</h5>
+        <p>{{ id_subcat }}</p>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
